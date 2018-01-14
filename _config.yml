@@ -1,0 +1,29 @@
+# Site settings
+title: "Coro Piccole Luci"
+email: marinellabonutti@gmail.com
+description: Home Page Associazione Coro Piccole Luci Castions delle Mura - Bagnaria Arsa (UD).
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 3
+
+# Misc settings
+featured-image-source:
+
+# Social settings
+email_url: mailto://marinellabonutti@gmail.com
+500px_url:
+facebook_url: https://facebook.com/coropiccoleluci
+github_url:
+gitlab_url:
+googleplus_url:
+instagram_url:
+linkedin_url:
+pinterest_url:
+slack_url:
+twitter_url:
+
+# Build settings
+markdown: kramdown
