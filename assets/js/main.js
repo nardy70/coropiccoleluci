@@ -15,6 +15,20 @@
 			xsmall:	'(max-width: 480px)'
 		});
 
+	var images = [];
+	var nr_img = 7;
+
+	for (var i = 1; i < nr_img + 1; i++) {
+	    images.push('banner' + i + '.jpg');
+	}
+
+	$('body').css({
+		'background-image': 'url(assets/images/' + images[Math.floor(Math.random() * images.length)] + ')',
+		'background-repeat': 'no-repeat',
+		'background-attachment': 'fixed',
+		'background-size': 'cover'
+	});
+
 	$(function() {
 
 		var	$window = $(window),
