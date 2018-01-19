@@ -2,6 +2,7 @@
 layout: page
 title: Elements
 description: Aliquam ut ex ut interdum donec amet imperdiet eleifend
+image: pic03.jpg
 ---
 
 <section>

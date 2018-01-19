@@ -22,7 +22,7 @@
 	    images.push('banner' + i + '.jpg');
 	}
 
-	$('body').css({
+	$('body.landing').css({
 		'background-image': 'url(assets/images/' + images[Math.floor(Math.random() * images.length)] + ')',
 		'background-repeat': 'no-repeat',
 		'background-attachment': 'fixed',
