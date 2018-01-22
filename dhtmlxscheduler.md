@@ -1,6 +1,6 @@
 ---
 layout: none
-title: Calendario
+title: Dhtmlxscheduler
 ---
 
 <link rel="stylesheet" href="assets/css/dhtmlxscheduler.css">

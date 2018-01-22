@@ -284,7 +284,7 @@
 	position: absolute;
 	top: 2.5em;
 	width: 100%;
-	height: calc(100% - 2.5em);
+	height: calc(50% - 2.5em);
 	display: none;
 	-webkit-transition: .25s;
 	transition: .25s;

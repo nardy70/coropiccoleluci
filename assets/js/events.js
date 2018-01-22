@@ -23,7 +23,7 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 				stylePast: false,
 				target: "",
 				useIsoDateFormat: false,
-				weekStart: 0,	// Sunday
+				weekStart: 1,	// Monday
 				xmlUrl: ""
 			};
 
@@ -222,8 +222,8 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 
 			if(startTime) {
 				var endTime = _getEventDetail(event, "endtime");
-				timeHtml = '<div><div class="monthly-list-time-start">' + formatTime(startTime) + "</div>"
-					+ (endTime ? '<div class="monthly-list-time-end">' + formatTime(endTime) + "</div>" : "")
+				timeHtml = '<div><div class="monthly-list-time-start">' + startTime + "</div>"
+					+ (endTime ? '<div class="monthly-list-time-end">' + endTime + "</div>" : "")
 					+ "</div>";
 			}
 
@@ -379,20 +379,20 @@ Monthly 2.2.2 by Kevin Thornbloom is licensed under a Creative Commons Attributi
 		}
 
 		// Returns a 12-hour format hour/minute with period. Opportunity for future localization.
-		function formatTime(value) {
-			var timeSplit = value.split(":");
-			var hour = parseInt(timeSplit[0], 10);
-			var period = "AM";
-			if(hour > 12) {
-				hour -= 12;
-				period = "PM";
-			} else if (hour == 12) {
-				period = "PM";
-			} else if(hour === 0) {
-				hour = 12;
-			}
-			return hour + ":" + String(timeSplit[1]) + " " + period;
-		}
+		// function formatTime(value) {
+		// 	var timeSplit = value.split(":");
+		// 	var hour = parseInt(timeSplit[0], 10);
+		// 	var period = "AM";
+		// 	if(hour > 12) {
+		// 		hour -= 12;
+		// 		period = "PM";
+		// 	} else if (hour == 12) {
+		// 		period = "PM";
+		// 	} else if(hour === 0) {
+		// 		hour = 12;
+		// 	}
+		// 	return hour + ":" + String(timeSplit[1]) + " " + period;
+		// }
 
 		function setNextMonth() {
 			var	setMonth = $(parent).data("setMonth"),
