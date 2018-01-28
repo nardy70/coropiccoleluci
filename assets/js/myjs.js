@@ -16,11 +16,11 @@
 	});
 
 
-// ------------------ Google Calendar API with Event Calendar -----------------
+// ------------------ Google Calendar API with jquery e-calendar -----------------
 	var url = 'https://www.googleapis.com/calendar/v3/calendars/de2pcr5r8offd01mmacsluiolg@group.calendar.google.com/events?key=AIzaSyD3cqITToGZckfgpzYcTAJspM8Nr_FZH3E';
 	
 	$.ajax({url: url, success: function(result){
-		//console.log(result);
+		console.log('results: ', result);
 
         var eventArray = result.items;
         var eventsData = [];
@@ -29,46 +29,26 @@
 
 		    if (eventArray[i].start.dateTime) {
 		    	var sdt = moment(eventArray[i].start.dateTime);
-		    	var start_time = moment.utc(sdt).utcOffset(60).format('HH:mm');
-		    	var start_date = moment(sdt).utcOffset(60).format('YYYY-MM-DD');
+		    	var dt = moment.utc(sdt).utcOffset(60).format('llll').toString();
 		    } else {
 		     	var sdt = moment(eventArray[i].start.date);
-		     	var start_time = '';
-		     	var start_date = moment(sdt).format('YYYY-MM-DD');
-		    }
-		    
-		    if (eventArray[i].end.dateTime) {
-		    	var edt = moment(eventArray[i].end.dateTime);
-		    	var end_time = moment.utc(edt).utcOffset(60).format('HH:mm');
-		    	var end_date = moment(edt).utcOffset(60).format('YYYY-MM-DD');
-		    } else {
-		     	var edt = moment(eventArray[i].end.date);
-		     	var end_time = '';
-		     	var end_date = moment(edt).format('YYYY-MM-DD');
+		     	var dt = moment(sdt).format('llll').toString();
 		    }
 
 		    eventsData.push({
-		    	"id": i + 1,
-				"name": eventArray[i].summary,
-				"startdate": start_date,
-				"enddate": end_date,
-				"starttime": start_time,
-				"endtime": end_time,
-				"color": "#F9E634",
-				"url": ""
+		    	title: eventArray[i].summary,
+		    	description: eventArray[i].description,
+		    	datetime: new Date(dt)
 			});
 		    
 		}
 
-		var e_data = { "monthly": eventsData }
-
-        $('#mycalendar').monthly({
-			mode: 'event',
-			dataType: 'json',
-			events: e_data
+		$('#e-calendar').eCalendar({
+			events: eventsData
 		});
 
 	}});
+
 
 // -------------------------- Lightbox Effect fancybox -------------------------
     var addToAll = false;

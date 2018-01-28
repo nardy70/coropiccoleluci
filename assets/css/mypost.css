@@ -1,3 +1,10 @@
+.textstroke {
+    color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
+
 img.float-left {display:inline; float:left; margin:5px 15px 5px 0; max-width: 40%;}
 img.float-right {float:right; margin:5px 0 5px 15px; max-width: 40%;}
 img.aligncenter {display:block; margin:10px auto; max-width: 40%}
@@ -22,9 +29,9 @@ a.fancybox img {
 } 
 a.fancybox:hover img {
     position: relative; z-index: 999;
-    -o-transform: scale(1.03,1.03);
-    -ms-transform: scale(1.03,1.03);
-    -moz-transform: scale(1.03,1.03);
-    -webkit-transform: scale(1.03,1.03);
-    transform: scale(1.03,1.03);
+    -o-transform: scale(1.05,1.05);
+    -ms-transform: scale(1.05,1.05);
+    -moz-transform: scale(1.05,1.05);
+    -webkit-transform: scale(1.05,1.05);
+    transform: scale(1.05,1.05);
 }
