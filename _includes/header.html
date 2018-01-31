@@ -14,8 +14,8 @@
 							<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 							{% endif %} {% endfor %} {% for page in site.pages %} {% if page.layout == "page" %}
 							<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-							{% endif %} {% endfor %}{% for page in site.pages %} {% if page.layout == "none" %}
-							<li><a href="{{ page.url | absolute_url }}" target="_blank">{{ page.title }}</a></li>
+							{% endif %} {% endfor %}{% for page in site.pages %} {% if page.layout == "gallery" %}
+							<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 							{% endif %} {% endfor %}
 						</ul>
 					</div>

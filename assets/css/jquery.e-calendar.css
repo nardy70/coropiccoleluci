@@ -55,7 +55,7 @@
 .c-week-day {
     width: 14.28%;
     height: 10.38%;
-    background-color: rgb(145, 172, 203);
+    background-color: #2e3842;
     color: white;
     float: left;
     text-align: center;
@@ -90,15 +90,20 @@
     font-weight: bold;
 }
 
-.c-today {
-    background-color: #D8EAF1;
-}
-
 .c-event {
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
     background-color: rgb(166, 166, 166);
     color: white;
     font-weight: bold;
     cursor: pointer;
+}
+
+.c-today {
+    /*background-color: #D8EAF1;*/
+    color: #A41D41;
+    font-weight: bold;
 }
 
 .c-grid {
@@ -117,7 +122,7 @@
 .c-grid-title {
     font-weight: bold;
     float: left;
-    background-color: rgb(112, 145, 183);
+    background-color: #A41D41;
     color: white;
 }
 
@@ -126,7 +131,7 @@
     height: 12%;
     text-align: center;
     font-weight: bold;
-    background-color: rgb(135, 155, 188);
+    background-color: #2e3842;
     color: white;
 }
 

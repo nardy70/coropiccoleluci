@@ -20,7 +20,7 @@
 	var url = 'https://www.googleapis.com/calendar/v3/calendars/de2pcr5r8offd01mmacsluiolg@group.calendar.google.com/events?key=AIzaSyD3cqITToGZckfgpzYcTAJspM8Nr_FZH3E';
 	
 	$.ajax({url: url, success: function(result){
-		console.log('results: ', result);
+		//console.log('results: ', result);
 
         var eventArray = result.items;
         var eventsData = [];
