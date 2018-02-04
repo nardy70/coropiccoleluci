@@ -35,3 +35,17 @@ a.fancybox:hover img {
     -webkit-transform: scale(1.05,1.05);
     transform: scale(1.05,1.05);
 }
+
+.responsiveCal {
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.responsiveCal iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}

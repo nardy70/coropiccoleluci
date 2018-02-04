@@ -17,37 +17,37 @@
 
 
 // ------------------ Google Calendar API with jquery e-calendar -----------------
-	var url = 'https://www.googleapis.com/calendar/v3/calendars/de2pcr5r8offd01mmacsluiolg@group.calendar.google.com/events?key=AIzaSyD3cqITToGZckfgpzYcTAJspM8Nr_FZH3E';
+	// var url = 'https://www.googleapis.com/calendar/v3/calendars/de2pcr5r8offd01mmacsluiolg@group.calendar.google.com/events?key=AIzaSyD3cqITToGZckfgpzYcTAJspM8Nr_FZH3E';
 	
-	$.ajax({url: url, success: function(result){
-		//console.log('results: ', result);
+	// $.ajax({url: url, success: function(result){
+	// 	//console.log('results: ', result);
 
-        var eventArray = result.items;
-        var eventsData = [];
+ //        var eventArray = result.items;
+ //        var eventsData = [];
 
-    	for (var i = 0; i < eventArray.length; i++) {
+ //    	for (var i = 0; i < eventArray.length; i++) {
 
-		    if (eventArray[i].start.dateTime) {
-		    	var sdt = moment(eventArray[i].start.dateTime);
-		    	var dt = moment.utc(sdt).utcOffset(60).format('llll').toString();
-		    } else {
-		     	var sdt = moment(eventArray[i].start.date);
-		     	var dt = moment(sdt).format('llll').toString();
-		    }
+	// 	    if (eventArray[i].start.dateTime) {
+	// 	    	var sdt = moment(eventArray[i].start.dateTime);
+	// 	    	var dt = moment.utc(sdt).utcOffset(60).format('llll').toString();
+	// 	    } else {
+	// 	     	var sdt = moment(eventArray[i].start.date);
+	// 	     	var dt = moment(sdt).format('llll').toString();
+	// 	    }
 
-		    eventsData.push({
-		    	title: eventArray[i].summary,
-		    	description: eventArray[i].description,
-		    	datetime: new Date(dt)
-			});
+	// 	    eventsData.push({
+	// 	    	title: eventArray[i].summary,
+	// 	    	description: eventArray[i].description,
+	// 	    	datetime: new Date(dt)
+	// 		});
 		    
-		}
+	// 	}
 
-		$('#e-calendar').eCalendar({
-			events: eventsData
-		});
+	// 	$('#e-calendar').eCalendar({
+	// 		events: eventsData
+	// 	});
 
-	}});
+	// }});
 
 
 // -------------------------- Lightbox Effect fancybox -------------------------
@@ -67,5 +67,18 @@
         titlePosition: titlePosition
     });
    $.noConflict();
-    
+
+
+// -------------------------- Bxslider Galleria Immagini ------------------------
+    $('#slider1').bxSlider({
+      auto: true,
+      mode: 'fade',
+      shrinkItems: true,
+      autoControls: true,
+      stopAutoOnClick: true,
+      slideWidth: 1920,
+      adaptiveHeight: true,
+      captions: true
+    });
+
 })(jQuery);
