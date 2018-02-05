@@ -15,8 +15,8 @@
 							{% endif %} {% endfor %} {% for page in site.pages %} {% if page.layout == "page" %}
 							<li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 							{% endif %} {% endfor %}
-							<li><a href="#three" class="more scrolly">DOCUMENTAZIONE</a></li>
-							<li><a href="#cta" class="more scrolly">CONTATTI</a></li>
+							<li><a href="{{site.baseurl}}/#three">DOCUMENTAZIONE</a></li>
+							<li><a href="{{site.baseurl}}/#cta">CONTATTI</a></li>
 						</ul>
 					</div>
 				</li>
