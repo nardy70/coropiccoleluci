@@ -2,7 +2,7 @@
 title: "Coro Piccole Luci"
 email: marinellabonutti@gmail.com
 description: Home Page Associazione Coro Piccole Luci Castions delle Mura - Bagnaria Arsa (UD).
-baseurl: "/coropiccoleluci" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Homepage tiles
