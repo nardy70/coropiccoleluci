@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Concerto Genetliaco di Gemona (UD)
-description: Concerto Genetliaco presso il Convento del Sacro Cuore di Gesu' - 30 maggio 2015
+description: Concerto Genetliaco presso il Convento del Sacro Cuore di Gesu' - Gemona 30 maggio 2015.
 image: gallery/2015/gemona_30_mag_2015.jpg
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Armonie di Vita a Castions delle Mura (UD)
-description: Manifestazione annuale “Armonie di Vita… pensando a Lucia” - 17 giugno 2016.
+description: Manifestazione annuale “Armonie di Vita… pensando a Lucia” - Castions 17 giugno 2016.
 image: gallery/2016/armonie_di_vita_17_giu_2016.jpg
 ---
 

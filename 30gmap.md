@@ -2,6 +2,7 @@
 layout: page
 title: Dove Siamo
 description: Come raggiungerci.
+image: defaultbanner.svg
 ---
 
 <style type="text/css">

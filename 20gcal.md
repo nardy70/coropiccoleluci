@@ -2,6 +2,7 @@
 layout: page
 title: Calendario Eventi
 description: Segui tutte le nostre esibizioni.
+image: defaultbanner.svg
 ---
 
 <div class="responsiveCal">

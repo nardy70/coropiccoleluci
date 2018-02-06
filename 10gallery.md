@@ -2,6 +2,7 @@
 layout: page
 title: Galleria Immagini
 description: Alcune immagini delle nostre esibizioni.
+image: defaultbanner.svg
 ---
 
 <div id="slider1" style="text-align:center">
